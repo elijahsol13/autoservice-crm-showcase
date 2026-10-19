@@ -1,0 +1,18 @@
+# Demonstration only — never add runtime data or full project copies.
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite*
+*.log
+*.pem
+*.key
+*.p12
+*.pfx
+node_modules/
+.next/
+coverage/
+private/
+backups/
+data/
+.DS_Store

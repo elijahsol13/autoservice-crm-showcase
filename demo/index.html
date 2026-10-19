@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CRM автосервиса — локальная демонстрация</title>
+  <link rel="stylesheet" href="demo.css">
+  <script defer src="demo.js"></script>
+</head>
+<body>
+<div class="demo-banner"><span class="demo-dot"></span><b>ДЕМОНСТРАЦИОННАЯ РЕКОНСТРУКЦИЯ</b><span>Все клиенты, заказы и суммы вымышлены · нет сервера и отправки данных</span><a href="#dashboard">← Вернуться к кейсу</a></div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><div class="logo-mark">✳</div><span>DEMO<span class="logo-accent">CRM</span><small>СИСТЕМА АВТОСЕРВИСА</small></span></div>
+    <div class="menu-group">РАБОЧАЯ ПАНЕЛЬ</div>
+    <nav aria-label="Демо-разделы">
+      <a data-tab="dashboard" href="#dashboard" class="selected"><span class="ico">▦</span> Обзор заказов</a>
+      <a data-tab="order" href="#order"><span class="ico">▤</span> Заказ-наряд</a>
+      <a data-tab="calendar" href="#calendar"><span class="ico">▦</span> Календарь</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="avatar">Д</span><div><b>Демо-приёмщик</b><small>Тестовый профиль</small></div></div>
+  </aside>
+  <main class="main">
+    <header class="app-header"><div><span class="crumb">РАБОЧЕЕ ПРОСТРАНСТВО <span>/</span> <strong id="crumb">ОБЗОР</strong></span></div><div class="header-right"><span class="offline">● Локальная симуляция</span><span class="user-mark">Д</span></div></header>
+    <div class="content">
+      <section class="screen" id="dashboard" data-screen="dashboard">
+        <div class="headline"><div><p class="eyebrow">ДОСКА ЗАКАЗОВ · ДЕМО</p><h1>Рабочая панель</h1><p class="subtitle">Статусы заявок и текущая загрузка. Пример условных заказов.</p></div><a href="#order" class="cta">Посмотреть заказ ↗</a></div>
+        <div class="stats"><div class="stat"><span>ОТКРЫТЫХ ЗАКАЗОВ</span><strong>06</strong><small>В демо-наборе</small></div><div class="stat"><span>В РАБОТЕ</span><strong>02</strong><small>Тестовые записи</small></div><div class="stat"><span>ГОТОВО К ВЫДАЧЕ</span><strong>01</strong><small>Тестовый заказ</small></div><div class="stat"><span>ПОСТОВ ЗАНЯТО</span><strong>02<span class="deemph">/03</span></strong><small>Пример расписания</small></div></div>
+        <div class="panel-label"><h2>Очередь и статусы</h2><span>УЧЕБНЫЙ НАБОР · 6 ЗАКАЗОВ</span></div>
+        <div class="kanban">
+          <div class="column col-new"><div class="column-title"><span>Новые заявки</span><small>1</small></div><a href="#order" class="order-card"><div class="card-head"><b>№ Д-1042</b><span>Сегодня</span></div><h3>Renault Logan</h3><p>Тестовый клиент №1</p><div class="pill-row"><span class="pill blue">Новая</span><span class="pill">Диагностика</span></div><div class="card-foot">Проверка тормозов <b>→</b></div></a></div>
+          <div class="column col-queue"><div class="column-title"><span>Запись</span><small>1</small></div><div class="order-card"><div class="card-head"><b>№ Д-1043</b><span>Завтра</span></div><h3>Ford Focus</h3><p>Тестовый клиент №2</p><div class="pill-row"><span class="pill purple">Записан</span></div><div class="card-foot">Замена масла <b>→</b></div></div></div>
+          <div class="column col-work"><div class="column-title"><span>В работе</span><small>2</small></div><div class="order-card"><div class="card-head"><b>№ Д-1039</b><span>Пост 1</span></div><h3>Volkswagen Polo</h3><p>Тестовый клиент №3</p><div class="pill-row"><span class="pill orange">В работе</span></div><div class="card-foot">Ремонт подвески <b>→</b></div></div><div class="order-card"><div class="card-head"><b>№ Д-1040</b><span>Пост 2</span></div><h3>Hyundai Solaris</h3><p>Тестовый клиент №4</p><div class="pill-row"><span class="pill orange">В работе</span></div><div class="card-foot">Замена тормозных колодок <b>→</b></div></div></div>
+          <div class="column col-parts"><div class="column-title"><span>Ожидают детали</span><small>1</small></div><div class="order-card"><div class="card-head"><b>№ Д-1036</b><span>Ожидание</span></div><h3>Kia Rio</h3><p>Тестовый клиент №5</p><div class="pill-row"><span class="pill red">Запчасти</span></div><div class="card-foot">Задняя подвеска <b>→</b></div></div></div>
+          <div class="column col-ready"><div class="column-title"><span>Готовы</span><small>1</small></div><div class="order-card"><div class="card-head"><b>№ Д-1035</b><span>Готов</span></div><h3>Skoda Octavia</h3><p>Тестовый клиент №6</p><div class="pill-row"><span class="pill green">К выдаче</span></div><div class="card-foot">Диагностика <b>→</b></div></div></div>
+        </div>
+      </section>
+      <section class="screen" id="order" data-screen="order" hidden>
+        <div class="headline"><div><p class="eyebrow">КАРТОЧКА ЗАКАЗА · ДЕМО</p><h1>Заказ-наряд № Д-1042</h1><p class="subtitle">Тестовый клиент №1 · Renault Logan · данные намеренно вымышлены</p></div><a href="#dashboard" class="cta secondary">← К списку заказов</a></div>
+        <div class="order-layout"><div class="stack"><section class="box"><div class="box-heading"><h2>Автомобиль и клиент</h2><span class="pill blue">Новая заявка</span></div><div class="info-grid"><div><small>АВТОМОБИЛЬ</small><b>Renault Logan · 2018</b></div><div><small>ГОСНОМЕР</small><b>ДЕМО-000</b></div><div><small>КЛИЕНТ</small><b>Тестовый клиент №1</b></div><div><small>ТЕЛЕФОН</small><b>Не указан в демо</b></div></div></section><section class="box"><div class="box-heading"><h2>Расписание и пост</h2><span class="tag">ПЛАНИРОВАНИЕ</span></div><div class="info-grid"><div><small>ПОСТ</small><b>Подъёмник 1</b></div><div><small>ДАТА И ВРЕМЯ</small><b>20 окт, 10:30</b></div><div><small>ОТВЕТСТВЕННЫЙ</small><b>Механик (демо)</b></div><div><small>ЭТАП</small><b>Запись ожидает подтверждения</b></div></div></section></div>
+        <div class="stack"><section class="box"><div class="box-heading"><h2>Работы и запчасти</h2><span class="tag">ТЕСТОВЫЕ СУММЫ</span></div><div class="line-item"><div><b>Диагностика тормозной системы</b><small>Работа · демо</small></div><strong>1 500 ₽</strong></div><div class="line-item"><div><b>Комплект тормозных колодок</b><small>Запчасть · демо</small></div><strong>2 400 ₽</strong></div><div class="total"><span>Итого по заказу</span><strong>3 900 ₽</strong></div></section><section class="box"><div class="box-heading"><h2>События заказа</h2></div><div class="event"><span>●</span><div><b>Создана тестовая заявка</b><small>Демонстрационный сценарий</small></div></div><div class="event"><span>●</span><div><b>Назначен рабочий пост</b><small>Подъёмник 1</small></div></div><p class="readonly">Все данные этой страницы статичны. Кнопки сохранения, отправка уведомлений и API отключены.</p></section></div></div>
+      </section>
+      <section class="screen" id="calendar" data-screen="calendar" hidden>
+        <div class="headline"><div><p class="eyebrow">КАЛЕНДАРЬ · ДЕМО</p><h1>Планирование загрузки</h1><p class="subtitle">Запись автомобилей по постам. Пример расписания на неделю 19–23 октября.</p></div><a href="#order" class="cta">Карточка заказа ↗</a></div>
+        <section class="calendar-box"><div class="cal-toolbar"><div><strong>19 — 23 октября 2026</strong><span>Тестовое расписание без синхронизации</span></div><span class="cal-key"><i></i> Запланировано <i class="orange-key"></i> В работе</span></div><div class="cal-scroll"><div class="calendar-grid"><div class="cal-empty">ПОСТ / ДЕНЬ</div><div class="cal-head">ПН <b>19</b></div><div class="cal-head">ВТ <b>20</b></div><div class="cal-head">СР <b>21</b></div><div class="cal-head">ЧТ <b>22</b></div><div class="cal-head">ПТ <b>23</b></div>
+        <div class="cal-side">Подъёмник 1<small>Рабочий пост</small></div><div class="cal-cell"><div class="cal-event work">10:00–12:00<b>VW Polo</b><small>Подвеска</small></div></div><div class="cal-cell"><div class="cal-event planned">10:30–12:00<b>Renault Logan</b><small>Диагностика</small></div></div><div class="cal-cell"></div><div class="cal-cell"><div class="cal-event planned">14:00–15:00<b>Ford Focus</b><small>Замена масла</small></div></div><div class="cal-cell"></div>
+        <div class="cal-side">Подъёмник 2<small>Рабочий пост</small></div><div class="cal-cell"><div class="cal-event work">09:00–11:00<b>Hyundai Solaris</b><small>Тормозная система</small></div></div><div class="cal-cell"></div><div class="cal-cell"><div class="cal-event planned">11:00–13:00<b>Skoda Octavia</b><small>Осмотр</small></div></div><div class="cal-cell"></div><div class="cal-cell"><div class="cal-event planned">15:00–17:00<b>Kia Rio</b><small>Подвеска</small></div></div>
+        <div class="cal-side">Двор / ожидание<small>Зона ожидания</small></div><div class="cal-cell"></div><div class="cal-cell"><div class="cal-event waiting">09:00–10:00<b>Тестовый автомобиль</b><small>Приёмка</small></div></div><div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell"></div>
+        </div></div></section>
+      </section>
+    </div>
+    <footer class="app-footer">Демонстрационная версия на вымышленных данных · Отдельная модель интерфейса</footer>
+  </main>
+</div>
+</body>
+</html>
