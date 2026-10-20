@@ -1,5 +1,11 @@
 # Сайт и CRM автосервиса — демонстрация проекта
 
+**English overview.** I built a public website and internal CRM for an operating auto service business. Website enquiries appear in the CRM and trigger Telegram alerts; the internal workflow includes jobs, scheduling, team roles and payment records. This repository contains selected real source excerpts and a separate fictional-data UI reconstruction, not the private production CRM.
+
+- [Case study in English](https://portfolio.rustycat.cc/en/autoservice.html)
+- [Interactive CRM demo in English](https://portfolio.rustycat.cc/en/demo-crm/index.html)
+- [Кейс на русском](https://portfolio.rustycat.cc/autoservice.html) · [демо на русском](https://portfolio.rustycat.cc/demo-crm/index.html)
+
 Рабочий проект объединяет публичный сайт автосервиса с внутренними процессами: запись клиентов, заказ-наряды, статусы, календарь, персонал и расчёты. Реальная система используется автосервисом; владелец разрешил демонстрацию проекта.
 
 **Интерактивный пример:** скачайте репозиторий и откройте файл `demo/index.html` в браузере. Это самостоятельная реконструкция доски заказов, карточки заказ-наряда и календаря. Все записи, сотрудники, автомобили, номера и суммы вымышлены. Пример работает без базы, авторизации, серверных запросов и уведомлений.
@@ -28,4 +34,4 @@
 
 В публичный материал намеренно не перенесены база клиентов, заказы, финансы, настройки сервера, интеграционные ключи и Git-история исходного проекта. Реальную CRM не следует открывать посторонним. Код из `source-excerpts/` иллюстрирует решения рабочего приложения, но для самостоятельного запуска зависит от закрытых модулей.
 
-Для локального просмотра достаточно открыть `demo/index.html` в браузере. Публичная ссылка на браузерную версию будет добавлена после размещения демонстрации на статическом хостинге.
+Для локального просмотра достаточно открыть `demo/index.html` в браузере. Браузерная реконструкция доступна на [русском](https://portfolio.rustycat.cc/demo-crm/index.html) и [английском](https://portfolio.rustycat.cc/en/demo-crm/index.html).
